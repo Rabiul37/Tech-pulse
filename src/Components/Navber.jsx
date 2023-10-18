@@ -1,6 +1,18 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 const Navber = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   const navber = (
     <>
       <li>
@@ -55,7 +67,30 @@ const Navber = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navber}</ul>
         </div>
-        <div className="navbar-end flex gap-3"></div>
+        <div className="navbar-end flex gap-3">
+          <div>
+            {user ? (
+              <div className="flex gap-2 items-center">
+                <img
+                  className="w-12 rounded-full"
+                  src={user?.photoURL}
+                  alt=""
+                />
+                <h1 className=" hidden lg:block text-lg font-semibold text-[#4A07DA]">
+                  {user?.displayName}
+                </h1>
+                <button
+                  onClick={handleLogOut}
+                  className="btn bg-[#4A07DA] text-white"
+                >
+                  Log out
+                </button>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,40 @@
 import { Link } from "react-router-dom";
 import Navber from "../Components/Navber";
-
+import { useContext, useState } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
+import Swal from "sweetalert2";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/Ai";
+import { FcGoogle } from "react-icons/Fc";
 const Login = () => {
+  const { googleLogin, login } = useContext(AuthContext);
+  const [loginError, setLoginError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const handleGooleLogin = () => {
+    googleLogin()
+      .then((result) => {
+        console.log(result.message);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+
   const handleLoginForm = (event) => {
+    setLoginError("");
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+    login(email, password)
+      .then((result) => {
+        console.log(result);
+        Swal.fire("Good job!", "You successfully logedin!", "success");
+      })
+      .catch((error) => {
+        console.log(error.message);
+        setLoginError("This E-mail or Password is invalid");
+      });
   };
   return (
     <div>
@@ -18,6 +45,9 @@ const Login = () => {
             <h1 className="text-5xl font-bold">Login now!</h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="text-center mt-5 text-red-600">
+              {loginError && <span>{loginError}</span>}
+            </div>
             <form onSubmit={handleLoginForm} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -36,12 +66,22 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   name="password"
                   placeholder="password"
-                  className="input input-bordered"
+                  className="input input-bordered relative"
                   required
                 />
+                <span
+                  className="text-xl absolute right-10 top-[192px] "
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? (
+                    <AiFillEye></AiFillEye>
+                  ) : (
+                    <AiFillEyeInvisible></AiFillEyeInvisible>
+                  )}
+                </span>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
@@ -58,6 +98,18 @@ const Login = () => {
                 </Link>{" "}
               </h1>
             </form>
+            <span className="text-sm font-semibold text-center text-[#0095D9]">
+              Login with
+            </span>
+            <button
+              onClick={handleGooleLogin}
+              className="btn btn-outline mb-3 mx-2"
+            >
+              <span className="text-xl">
+                <FcGoogle></FcGoogle>
+              </span>
+              Google
+            </button>
           </div>
         </div>
       </div>
