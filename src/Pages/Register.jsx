@@ -42,10 +42,10 @@ const Register = () => {
   return (
     <div>
       <Navber></Navber>
-      <div className="min-h-screen bg-base-200">
+      <div className="min-h-screen bg-gray-800">
         <div className="hero-content flex-col ">
           <div className="text-center ">
-            <h1 className="text-5xl font-bold">Register now!</h1>
+            <h1 className="text-5xl font-bold text-gray-200">Register now!</h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
             <div className="text-center m-3">
@@ -71,7 +71,7 @@ const Register = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">User E-mail</span>
+                    <span className="label-text">User image</span>
                   </label>
                   <input
                     type="text"
@@ -123,7 +123,7 @@ const Register = () => {
                 </span>
               </label>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn text-gray-200 bg-gray-700">Login</button>
               </div>
               <h1 className="texxt-sm font-semibold">
                 Do not have account ?{" "}

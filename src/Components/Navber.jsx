@@ -76,12 +76,12 @@ const Navber = () => {
                   src={user?.photoURL}
                   alt=""
                 />
-                <h1 className=" hidden lg:block text-lg font-semibold text-[#4A07DA]">
+                <h1 className=" hidden lg:block text-lg font-semibold text-gray-200">
                   {user?.displayName}
                 </h1>
                 <button
                   onClick={handleLogOut}
-                  className="btn bg-[#4A07DA] text-white"
+                  className="btn bg-[#2B3440] text-white"
                 >
                   Log out
                 </button>

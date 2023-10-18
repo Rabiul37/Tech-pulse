@@ -5,7 +5,7 @@ import { GiHeatHaze } from "react-icons/Gi";
 import service from "../assets/service.jpg";
 const OurService = () => {
   return (
-    <div className="grid grid-cols-1 gap-8 mt-12 bg-gray-700 p-10  m-auto lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-8 mt-12 bg-gray-700 p-10 pt-28 pb-28  m-auto lg:grid-cols-3">
       <div className="col-span-2">
         <h1 className="text-5xl font-semibold text-[#B1FCFC]">Our Services</h1>
         <p className="text-sm text-gray-200 text-justify">

@@ -1,8 +1,15 @@
+import logo from "../assets/logo.png";
 const Footer = () => {
   return (
     <div>
-      <div className="h-24 bg-white"></div>
-      <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+      <div className="h-24"></div>
+      <footer className="footer footer-center p-10 bg-gray-800 text-gray-100 rounded">
+        <div className="flex items-center gap-2 ml-20 lg:ml-0">
+          <img className="w-12" src={logo} alt="" />
+          <span className="text-sm font-extrabold text-gray-100 lg:text-3xl">
+            Tech <span className="text-[#B1FCFC]">Pulse</span>{" "}
+          </span>
+        </div>
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
