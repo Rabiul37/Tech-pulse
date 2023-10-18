@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayOut = () => {
   return (
-    <div className="w-11/12 m-auto ">
+    <div className="bg-gray-500">
       <Outlet></Outlet>
     </div>
   );

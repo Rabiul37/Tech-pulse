@@ -4,7 +4,7 @@ import banner from "../assets/banner.jpg";
 const Banner = () => {
   return (
     <div>
-      <div className=" bg-[#00000088] w-11/12 h-[80vh] absolute">
+      <div className=" bg-[#00000088] w-full h-[90vh] absolute">
         <div className="flex flex-col items-center mt-16 gap-8">
           <h1 className=" text-xl font-bold text-gray-200   lg:text-5xl tracking-wider">
             The Pulse of Technology
@@ -23,7 +23,7 @@ const Banner = () => {
           </h1>
         </div>
       </div>
-      <img className="w-full h-[80vh]" src={banner} alt="" />
+      <img className="w-full h-[90vh]" src={banner} alt="" />
     </div>
   );
 };

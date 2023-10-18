@@ -31,7 +31,7 @@ const Navber = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-gray-600">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn  lg:hidden">
@@ -59,12 +59,12 @@ const Navber = () => {
           </div>
           <div className="flex items-center gap-2 ml-20 lg:ml-0">
             <img className="w-12" src={logo} alt="" />
-            <span className="text-sm font-extrabold text-[#0095D9] lg:text-3xl">
-              Tech <span className="text-[#323231]">Pulse</span>{" "}
+            <span className="text-sm font-extrabold text-gray-100 lg:text-3xl">
+              Tech <span className="text-[#B1FCFC]">Pulse</span>{" "}
             </span>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden text-4xl font-semibold text-gray-100 lg:flex">
           <ul className="menu menu-horizontal px-1">{navber}</ul>
         </div>
         <div className="navbar-end flex gap-3">
