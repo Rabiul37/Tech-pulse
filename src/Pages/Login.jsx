@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import Navber from "../Components/Navber";
 
 const Login = () => {
+  const handleLoginForm = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+  };
   return (
     <div>
       <Navber></Navber>
@@ -11,7 +18,7 @@ const Login = () => {
             <h1 className="text-5xl font-bold">Login now!</h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body">
+            <form onSubmit={handleLoginForm} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
