@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navber from "../Components/Navber";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -9,6 +9,9 @@ const Login = () => {
   const { googleLogin, login } = useContext(AuthContext);
   const [loginError, setLoginError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const handleGooleLogin = () => {
     googleLogin()
       .then((result) => {
@@ -29,6 +32,7 @@ const Login = () => {
     login(email, password)
       .then((result) => {
         console.log(result);
+        navigate(location?.state ? location.state : "/");
         Swal.fire("Good job!", "You successfully logedin!", "success");
       })
       .catch((error) => {

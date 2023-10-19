@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Navber from "../Components/Navber";
+import Swal from "sweetalert2";
 
 const Update = () => {
   const Products = useLoaderData();
@@ -36,7 +37,7 @@ const Update = () => {
       .then((data) => {
         console.log(data);
         if (data.modifiedCount > 0) {
-          alert("product update successfully");
+          Swal.fire("well Done!", "You product updeted!", "success");
         }
       });
   };

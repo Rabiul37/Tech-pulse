@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "brandName": "Apple",
+    "brandImage": "https://i.ibb.co/n8mH57X/apple-Brand.jpg",
+    "firstSliderImage": "https://i.ibb.co/0Fxv7nV/apple-Banner1.jpg",
+    "secondSliderImage": "https://i.ibb.co/DRYkRzC/apple-Banner2.jpg",
+    "thirdSliderImage": "https://i.ibb.co/JkZ4VKt/apple-Banner3.jpg"
+  },
+  {
+    "id": 2,
+    "brandName": "Microsoft",
+    "brandImage": "https://i.ibb.co/6vkkmzg/microsoftbrand.jpg",
+    "firstSliderImage": "https://i.ibb.co/94NcNS0/micbanner11.jpg",
+    "secondSliderImage": "https://i.ibb.co/zSRrk81/micbanner2.jpg",
+    "thirdSliderImage": "https://i.ibb.co/k481g6T/micbanner3.jpg"
+  },
+  {
+    "id": 3,
+    "brandName": "google",
+    "brandImage": "https://i.ibb.co/0Mnc5ZM/google-Brand.jpg",
+    "firstSliderImage": "https://i.ibb.co/X4wh5kh/google-Banner1.jpg",
+    "secondSliderImage": "https://i.ibb.co/KNDT9T7/google-Banner2.png",
+    "thirdSliderImage": "https://i.ibb.co/w63Bm0g/google-Banner3.jpg"
+  },
+  {
+    "id": 4,
+    "brandName": "Tesla",
+    "brandImage": "https://i.ibb.co/cJxt5y5/tesla-Brand.jpg",
+    "firstSliderImage": "https://i.ibb.co/pwQv8kg/tesla-Banner1.jpg",
+    "secondSliderImage": "https://i.ibb.co/wYS5c2h/tesla-Banner2.jpg",
+    "thirdSliderImage": "https://i.ibb.co/dtL6RNG/tesla-Banner3.jpg"
+  },
+  {
+    "id": 5,
+    "brandName": "Samsung",
+    "brandImage": "https://i.ibb.co/ZW9KLm3/samBrand.jpg",
+    "firstSliderImage": "https://i.ibb.co/wBsp4k3/sam-Banner1.jpg",
+    "secondSliderImage": "https://i.ibb.co/QczSKgr/sam-Banner2.jpg",
+    "thirdSliderImage": "https://i.ibb.co/SfVd7qw/sam-Banner3.jpg"
+  }
+]

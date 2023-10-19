@@ -7,6 +7,9 @@ import MyCart from "../Pages/MyCart";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Update from "../Pages/Update";
+import AddProductPrivet from "../PrivetRout/AddProductPrivet";
+import MyCartPrivet from "../PrivetRout/MyCartPrivet";
+import BrandDetails from "../Pages/BrandDetails";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +23,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/AddProduct",
-        element: <AddProducts></AddProducts>,
+        element: (
+          <AddProductPrivet>
+            <AddProducts></AddProducts>
+          </AddProductPrivet>
+        ),
       },
       {
         path: "/MyCart",
-        element: <MyCart></MyCart>,
+        element: (
+          <MyCartPrivet>
+            <MyCart></MyCart>
+          </MyCartPrivet>
+        ),
         loader: () => fetch("http://localhost:5000/products"),
       },
       {
@@ -40,6 +51,11 @@ const router = createBrowserRouter([
       {
         path: "/Register",
         element: <Register></Register>,
+      },
+      {
+        path: "/brandDetails/:id",
+        element: <BrandDetails></BrandDetails>,
+        loader: () => fetch("/data.json"),
       },
     ],
   },
