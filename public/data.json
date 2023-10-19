@@ -5,7 +5,50 @@
     "brandImage": "https://i.ibb.co/n8mH57X/apple-Brand.jpg",
     "firstSliderImage": "https://i.ibb.co/0Fxv7nV/apple-Banner1.jpg",
     "secondSliderImage": "https://i.ibb.co/DRYkRzC/apple-Banner2.jpg",
-    "thirdSliderImage": "https://i.ibb.co/JkZ4VKt/apple-Banner3.jpg"
+    "thirdSliderImage": "https://i.ibb.co/JkZ4VKt/apple-Banner3.jpg",
+    "forthImg": "https://i.ibb.co/mBr3Dds/apple-Product.jpg",
+    "products": [
+      {
+        "id": 11,
+        "img": "https://i.ibb.co/0Fxv7nV/apple-Banner1.jpg",
+        "name": "Iphone 14 pro",
+        "brandName": "Apple",
+        "type": "Mobile",
+        "price": 1200,
+        "rating": 4.5,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 12,
+        "img": "https://i.ibb.co/DRYkRzC/apple-Banner2.jpg",
+        "name": "ipod 12 ",
+        "brandName": "Apple",
+        "type": "Laptop",
+        "price": 1500,
+        "rating": 4.2,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 13,
+        "img": "https://i.ibb.co/JkZ4VKt/apple-Banner3.jpg",
+        "name": "Home pod",
+        "brandName": "Apple",
+        "type": "Music player",
+        "price": 119.99,
+        "rating": 4.8,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 14,
+        "img": "https://i.ibb.co/mBr3Dds/apple-Product.jpg",
+        "name": "Aus keyboard",
+        "brandName": "Apple",
+        "type": "keybord",
+        "price": 39.99,
+        "rating": 4.0,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      }
+    ]
   },
   {
     "id": 2,
@@ -13,15 +56,101 @@
     "brandImage": "https://i.ibb.co/6vkkmzg/microsoftbrand.jpg",
     "firstSliderImage": "https://i.ibb.co/94NcNS0/micbanner11.jpg",
     "secondSliderImage": "https://i.ibb.co/zSRrk81/micbanner2.jpg",
-    "thirdSliderImage": "https://i.ibb.co/k481g6T/micbanner3.jpg"
+    "thirdSliderImage": "https://i.ibb.co/k481g6T/micbanner3.jpg",
+    "forthImg": "https://i.ibb.co/TgjsbQf/mic-Banner.jpg",
+    "products": [
+      {
+        "id": 21,
+        "img": "https://i.ibb.co/94NcNS0/micbanner11.jpg",
+        "name": "word 2016",
+        "brandName": "Microsoft",
+        "type": "Software",
+        "price": 2449.99,
+        "rating": 4.5,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 22,
+        "img": "https://i.ibb.co/zSRrk81/micbanner2.jpg",
+        "name": "exel 2023",
+        "brandName": "Microsoft",
+        "type": "Software",
+        "price": 3479.99,
+        "rating": 4.2,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 23,
+        "img": "https://i.ibb.co/k481g6T/micbanner3.jpg",
+        "name": "Power point",
+        "brandName": "Microsoft",
+        "type": "Software",
+        "price": 5119.99,
+        "rating": 4.8,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 24,
+        "img": "https://i.ibb.co/TgjsbQf/mic-Banner.jpg",
+        "name": "Share point",
+        "brandName": "Microsoft",
+        "type": "Software",
+        "price": 7539.99,
+        "rating": 4.0,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      }
+    ]
   },
   {
     "id": 3,
     "brandName": "google",
-    "brandImage": "https://i.ibb.co/0Mnc5ZM/google-Brand.jpg",
+    "brandImage": "https://i.ibb.co/sqVVJJT/google-Brand.jpg",
     "firstSliderImage": "https://i.ibb.co/X4wh5kh/google-Banner1.jpg",
     "secondSliderImage": "https://i.ibb.co/KNDT9T7/google-Banner2.png",
-    "thirdSliderImage": "https://i.ibb.co/w63Bm0g/google-Banner3.jpg"
+    "thirdSliderImage": "https://i.ibb.co/w63Bm0g/google-Banner3.jpg",
+    "forthImg": "https://i.ibb.co/KsDY7rC/google-Banner.jpg",
+    "products": [
+      {
+        "id": 31,
+        "img": "https://i.ibb.co/0Fxv7nV/apple-Banner1.jpg",
+        "name": "Google Map",
+        "brandName": "Google",
+        "type": "Software",
+        "price": 1200,
+        "rating": 4.5,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 32,
+        "img": "https://i.ibb.co/KNDT9T7/google-Banner2.png",
+        "name": "Google Drive ",
+        "brandName": "Google",
+        "type": "Software",
+        "price": 1500,
+        "rating": 4.2,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 33,
+        "img": "https://i.ibb.co/w63Bm0g/google-Banner3.jpg",
+        "name": "Google Docs",
+        "brandName": "Google",
+        "type": "Software",
+        "price": 119.99,
+        "rating": 4.8,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 34,
+        "img": "https://i.ibb.co/KsDY7rC/google-Banner.jpg",
+        "name": "Hang Outs",
+        "brandName": "Google",
+        "type": "Software",
+        "price": 39.99,
+        "rating": 4.0,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      }
+    ]
   },
   {
     "id": 4,
@@ -29,7 +158,50 @@
     "brandImage": "https://i.ibb.co/cJxt5y5/tesla-Brand.jpg",
     "firstSliderImage": "https://i.ibb.co/pwQv8kg/tesla-Banner1.jpg",
     "secondSliderImage": "https://i.ibb.co/wYS5c2h/tesla-Banner2.jpg",
-    "thirdSliderImage": "https://i.ibb.co/dtL6RNG/tesla-Banner3.jpg"
+    "thirdSliderImage": "https://i.ibb.co/dtL6RNG/tesla-Banner3.jpg",
+    "forthImg": "https://i.ibb.co/LCCGwXP/teslapowerpack.jpg",
+    "products": [
+      {
+        "id": 41,
+        "img": "https://i.ibb.co/pwQv8kg/tesla-Banner1.jpg",
+        "name": "Tesla model S",
+        "brandName": "Tesla",
+        "type": "Car",
+        "price": 141200,
+        "rating": 4.5,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 42,
+        "img": "https://i.ibb.co/wYS5c2h/tesla-Banner2.jpg",
+        "name": "Tesla model x",
+        "brandName": "Tesla",
+        "type": "Car",
+        "price": 751500,
+        "rating": 4.2,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 43,
+        "img": "https://i.ibb.co/dtL6RNG/tesla-Banner3.jpg",
+        "name": "Tesla model 3",
+        "brandName": "Tesla",
+        "type": "Car",
+        "price": 381195,
+        "rating": 4.8,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 44,
+        "img": "https://i.ibb.co/LCCGwXP/teslapowerpack.jpg",
+        "name": "Power pack",
+        "brandName": "Tesla",
+        "type": "Charger",
+        "price": 396599,
+        "rating": 4.0,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      }
+    ]
   },
   {
     "id": 5,
@@ -37,6 +209,55 @@
     "brandImage": "https://i.ibb.co/ZW9KLm3/samBrand.jpg",
     "firstSliderImage": "https://i.ibb.co/wBsp4k3/sam-Banner1.jpg",
     "secondSliderImage": "https://i.ibb.co/QczSKgr/sam-Banner2.jpg",
-    "thirdSliderImage": "https://i.ibb.co/SfVd7qw/sam-Banner3.jpg"
+    "thirdSliderImage": "https://i.ibb.co/SfVd7qw/sam-Banner3.jpg",
+    "forthImg": "https://i.ibb.co/TWrBdpP/samsungfreez.jpg",
+    "products": [
+      {
+        "id": 51,
+        "img": "https://i.ibb.co/wBsp4k3/sam-Banner1.jpg",
+        "name": "Samsung js7",
+        "brandName": "SamSung",
+        "type": "Mobile",
+        "price": 1200,
+        "rating": 4.5,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 52,
+        "img": "https://i.ibb.co/QczSKgr/sam-Banner2.jpg",
+        "name": "Samsung vc8",
+        "brandName": "SamSung",
+        "type": "Laptop",
+        "price": 51500,
+        "rating": 4.2,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 53,
+        "img": "https://i.ibb.co/SfVd7qw/sam-Banner3.jpg",
+        "name": "Samsung mt54",
+        "brandName": "SamSung",
+        "type": "Smart TV",
+        "price": 381195,
+        "rating": 4.8,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      },
+      {
+        "id": 54,
+        "img": "https://i.ibb.co/TWrBdpP/samsungfreez.jpg",
+        "name": "Samsung B25",
+        "brandName": "SamSung",
+        "type": "Freez",
+        "price": 396599,
+        "rating": 4.0,
+        "description": "Our journey begins in the morning as we are awakened by the gentle hum of a smart alarm clock that also provides weather updates and our daily schedule. We reach for our trusty smartphone, our gateway to the digital world. It keeps us connected with friends and family through calls and messages and serves as our portable library, providing access to endless information and entertainment."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "brandName": "Intel",
+    "brandImage": "https://i.ibb.co/dmXWM7D/intel-brand.jpg",
+    "noData": "No available products "
   }
 ]
