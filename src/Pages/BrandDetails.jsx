@@ -51,14 +51,14 @@ const BrandDetails = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-5xl text-red-600 font-bold text-center m-20 bg-white">
-        {noData}
-      </h1>
       <div className="grid gap-2 lg:grid-cols-2 w-8/12 m-auto mt-12 mb-12">
         {products.map((product) => (
           <ProductCart key={product.id} product={product}></ProductCart>
         ))}
       </div>
+      <h1 className="text-5xl text-red-600 font-bold text-center m-20 bg-white">
+        {noData}
+      </h1>
     </div>
   );
 };

@@ -16,6 +16,7 @@ const Login = () => {
     googleLogin()
       .then((result) => {
         console.log(result.message);
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error.message);

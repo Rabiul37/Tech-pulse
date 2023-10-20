@@ -258,6 +258,8 @@
     "id": 6,
     "brandName": "Intel",
     "brandImage": "https://i.ibb.co/dmXWM7D/intel-brand.jpg",
-    "noData": "No available products "
+    "noData": "No available products ",
+
+    "products": []
   }
 ]

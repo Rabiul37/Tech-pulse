@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { MdDarkMode } from "react-icons/Md";
+import { HiLightBulb } from "react-icons/Hi";
 const Navber = () => {
+  const [mode, setMode] = useState(false);
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
     logOut()
@@ -13,6 +16,7 @@ const Navber = () => {
         console.log(error.message);
       });
   };
+  const handleHome = () => {};
   const navber = (
     <>
       <li>
@@ -90,6 +94,12 @@ const Navber = () => {
               ""
             )}
           </div>
+          <button
+            className="text-2xl text-gray-200"
+            onClick={() => handleHome(setMode(!mode))}
+          >
+            {mode ? <MdDarkMode></MdDarkMode> : <HiLightBulb></HiLightBulb>}
+          </button>
         </div>
       </div>
     </div>

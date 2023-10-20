@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Brands = () => {
   const [brands, setBrands] = useState([]);
   useEffect(() => {
-    fetch("../../public/data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setBrands(data));
   }, []);

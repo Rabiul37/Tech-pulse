@@ -12,13 +12,16 @@ const DetailsProduct = () => {
   const handleAddCart = () => {
     const product = { name, img, type, price, brandName, rating, description };
     console.log(product);
-    fetch("http://localhost:5000/products", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(product),
-    })
+    fetch(
+      "https://assignment-ten-server-p5zlxbw1b-rabiul-awals-projects.vercel.app/products",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(product),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

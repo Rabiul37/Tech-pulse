@@ -123,7 +123,9 @@ const Register = () => {
                 </span>
               </label>
               <div className="form-control mt-6">
-                <button className="btn text-gray-200 bg-gray-700">Login</button>
+                <button className="btn text-gray-200 bg-gray-700">
+                  Register
+                </button>
               </div>
               <h1 className="texxt-sm font-semibold">
                 Do not have account ?{" "}

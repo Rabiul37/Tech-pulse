@@ -26,13 +26,16 @@ const Update = () => {
       rating,
     };
 
-    fetch(`http://localhost:5000/products/${Products._id}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(updatedproduct),
-    })
+    fetch(
+      `https://assignment-ten-server-p5zlxbw1b-rabiul-awals-projects.vercel.app/products/${Products._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(updatedproduct),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

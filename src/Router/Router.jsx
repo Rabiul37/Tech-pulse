@@ -38,13 +38,18 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </MyCartPrivet>
         ),
-        loader: () => fetch("http://localhost:5000/products/"),
+        loader: () =>
+          fetch(
+            "https://assignment-ten-server-p5zlxbw1b-rabiul-awals-projects.vercel.app/products/"
+          ),
       },
       {
         path: "/update/:id",
         element: <Update></Update>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(
+            `https://assignment-ten-server-p5zlxbw1b-rabiul-awals-projects.vercel.app/products/${params.id}`
+          ),
       },
       {
         path: "/Login",
