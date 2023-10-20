@@ -7,10 +7,25 @@ const DetailsProduct = () => {
   const loadedData = useLoaderData();
   const allProducts = loadedData.flatMap((item) => item.products || []);
   const products = allProducts.find((product) => product.id == id);
-  const { name, img, type, price, description } = products;
+  const { name, img, type, price, description, brandName, rating } = products;
 
   const handleAddCart = () => {
-    Swal.fire("Good job!", "Your products add to the cart!", "success");
+    const product = { name, img, type, price, brandName, rating, description };
+    console.log(product);
+    fetch("http://localhost:5000/products", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(product),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire("Good job!", "Your products add to the cart!", "success");
+        }
+      });
   };
 
   return (
@@ -19,7 +34,7 @@ const DetailsProduct = () => {
       <div>
         <div className="card card-side bg-gray-700 shadow-xl mt-20 w-8/12 m-auto mb-28">
           <figure>
-            <img className="h-full w-[1350px]" src={img} alt="Movie" />
+            <img className="h-[500px] w-[1350px]" src={img} alt="Movie" />
           </figure>
           <div className="card-body">
             <h2 className="card-title text-xl text-cyan-300">Name : {name}</h2>

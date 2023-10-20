@@ -4,7 +4,7 @@ const Footer = () => {
     <div>
       <div className="h-24"></div>
       <footer className="footer footer-center p-10 bg-gray-800 text-gray-100 rounded">
-        <div className="flex items-center gap-2 ml-20 lg:ml-0">
+        <div className="flex items-center gap-2">
           <img className="w-12" src={logo} alt="" />
           <span className="text-sm font-extrabold text-gray-100 lg:text-3xl">
             Tech <span className="text-[#B1FCFC]">Pulse</span>{" "}

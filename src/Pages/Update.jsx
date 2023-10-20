@@ -4,26 +4,26 @@ import Swal from "sweetalert2";
 
 const Update = () => {
   const Products = useLoaderData();
-  const { ProductImage, ProductName, BrandName, ProductType, Price, Rating } =
-    Products;
+  console.log(Products);
+  const { img, name, brandName, type, price, rating } = Products;
 
   const handleUpdateForm = (event) => {
     event.preventDefault();
     const form = event.target;
-    const ProductImage = form.ProductImage.value;
-    const ProductName = form.ProductName.value;
-    const BrandName = form.BrandName.value;
-    const ProductType = form.ProductType.value;
-    const Price = form.Price.value;
-    const Rating = form.Rating.value;
+    const img = form.ProductImage.value;
+    const name = form.ProductName.value;
+    const brandName = form.BrandName.value;
+    const type = form.ProductType.value;
+    const price = form.Price.value;
+    const rating = form.Rating.value;
 
     const updatedproduct = {
-      ProductImage,
-      ProductName,
-      BrandName,
-      ProductType,
-      Price,
-      Rating,
+      img,
+      name,
+      brandName,
+      type,
+      price,
+      rating,
     };
 
     fetch(`http://localhost:5000/products/${Products._id}`, {
@@ -48,8 +48,8 @@ const Update = () => {
       <div className="hero min-h-screen bg-gray-700">
         <div className="hero-content flex-col ">
           <div className="text-center ">
-            <h1 className="text-5xl font-bold text-gray-200">
-              Add your product !
+            <h1 className="text-xl font-bold text-gray-200 lg:text-5xl">
+              Update your product !
             </h1>
           </div>
           <div className="card flex-shrink-0 w-full  shadow-2xl bg-base-100">
@@ -62,7 +62,7 @@ const Update = () => {
                   <input
                     type="text"
                     name="ProductImage"
-                    defaultValue={ProductImage}
+                    defaultValue={img}
                     placeholder="Enter Product Image link"
                     className="input input-bordered"
                     required
@@ -75,7 +75,7 @@ const Update = () => {
                   <input
                     type="text"
                     name="ProductName"
-                    defaultValue={ProductName}
+                    defaultValue={name}
                     placeholder="Product Name"
                     className="input input-bordered"
                     required
@@ -90,7 +90,7 @@ const Update = () => {
                   <input
                     type="text"
                     name="BrandName"
-                    defaultValue={BrandName}
+                    defaultValue={brandName}
                     placeholder="Brand Name"
                     className="input input-bordered"
                     required
@@ -103,7 +103,7 @@ const Update = () => {
                   <input
                     type="text"
                     name="ProductType"
-                    defaultValue={ProductType}
+                    defaultValue={type}
                     placeholder="phone, computer, headphone, etc"
                     className="input input-bordered"
                     required
@@ -118,7 +118,7 @@ const Update = () => {
                   <input
                     type="text"
                     name="Price"
-                    defaultValue={Price}
+                    defaultValue={price}
                     placeholder="Price"
                     className="input input-bordered"
                     required
@@ -131,7 +131,7 @@ const Update = () => {
                   <input
                     type="text"
                     name="Rating"
-                    defaultValue={Rating}
+                    defaultValue={rating}
                     placeholder="Rating"
                     className="input input-bordered"
                     required
@@ -141,7 +141,7 @@ const Update = () => {
 
               <div className="form-control mt-6">
                 <button className="btn bg-gray-700 text-gray-200">
-                  Add product
+                  Update product
                 </button>
               </div>
             </form>

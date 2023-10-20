@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import Navber from "../Components/Navber";
 
 const AddProducts = () => {
@@ -22,7 +23,6 @@ const AddProducts = () => {
       Rating,
     };
     console.log(product);
-
     fetch("http://localhost:5000/products", {
       method: "POST",
       headers: {
@@ -34,7 +34,7 @@ const AddProducts = () => {
       .then((data) => {
         console.log(data);
         if (data.insertedId) {
-          alert("data insert successfully");
+          Swal.fire("well Done!", "You product add successfully!", "success");
         }
       });
   };
@@ -44,7 +44,7 @@ const AddProducts = () => {
       <div className="hero min-h-screen bg-gray-700">
         <div className="hero-content flex-col ">
           <div className="text-center ">
-            <h1 className="text-5xl font-bold text-gray-200">
+            <h1 className="text-xl font-bold text-gray-200 lg:text-5xl">
               Add your product !
             </h1>
           </div>

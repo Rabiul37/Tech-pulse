@@ -4,7 +4,7 @@ const ProductCart = ({ product }) => {
   const { id, name, brandName, img, price, rating, type } = product;
   return (
     <div>
-      <div className="card card-compact w-96 bg-gray-700 shadow-xl mb-12">
+      <div className="card card-compact bg-gray-700 shadow-xl mb-12">
         <figure>
           <img className="w-96 h-60" src={img} alt="brand" />
         </figure>
