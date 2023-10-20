@@ -11,6 +11,7 @@ import AddProductPrivet from "../PrivetRout/AddProductPrivet";
 import MyCartPrivet from "../PrivetRout/MyCartPrivet";
 import BrandDetails from "../Pages/BrandDetails";
 import DetailsProduct from "../Pages/DetailsProduct";
+import DetailsPrivate from "../PrivetRout/DetailsPrivate";
 
 const router = createBrowserRouter([
   {
@@ -60,7 +61,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/detailsProduct/:id",
-        element: <DetailsProduct></DetailsProduct>,
+        element: (
+          <DetailsPrivate>
+            <DetailsProduct></DetailsProduct>
+          </DetailsPrivate>
+        ),
         loader: () => fetch("/data.json"),
       },
     ],
